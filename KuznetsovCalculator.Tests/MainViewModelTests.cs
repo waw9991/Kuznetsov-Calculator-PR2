@@ -18,9 +18,15 @@ public class MainViewModelTests
     [TestMethod]
     public void Evaluate_Error_DoesNotAddHistory()
     {
-        var model = new MainViewModel { Expression = "5/0" };
+        var model = new MainViewModel { Expression = "2+3" };
         model.Evaluate();
-        Assert.IsEmpty(model.History);
+        Assert.AreEqual("5", model.Result);
+        model.Expression = "5/0";
+        model.Evaluate();
+        Assert.HasCount(1, model.History);
+        Assert.AreEqual("2+3", model.History[0].Expression);
+        Assert.AreEqual("—", model.Result);
+        Assert.IsFalse(model.HasResult);
         StringAssert.Contains(model.Error, "ноль");
     }
     [TestMethod]
