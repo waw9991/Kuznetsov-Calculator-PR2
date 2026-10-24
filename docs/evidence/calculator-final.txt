@@ -1,6 +1,0 @@
-Тестовый запуск для C:\Users\91946\OneDrive\Desktop\берестов очкун\Practice2-Kuznetsov-Calculator\KuznetsovCalculator.Tests\bin\Release\net8.0\KuznetsovCalculator.Tests.dll (.NETCoreApp,Version=v8.0)
-Общее количество тестовых файлов (1), соответствующих указанному шаблону.
-Внимание! Перезапись файла с результатами: C:\Users\91946\OneDrive\Desktop\берестов очкун\Practice2-Kuznetsov-Calculator\docs\evidence\calculator-final.trx
-Файл результатов: C:\Users\91946\OneDrive\Desktop\берестов очкун\Practice2-Kuznetsov-Calculator\docs\evidence\calculator-final.trx
-
-Пройден!   : не пройдено     0, пройдено    51, пропущено     0, всего    51, длительность 84 ms. - KuznetsovCalculator.Tests.dll (net8.0)
