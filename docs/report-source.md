@@ -57,7 +57,7 @@ Tests: связанный файл MainViewModel.cs из проекта Wpf
 
 В разделе «Зависимости» проекта Wpf выбирается добавление ссылки на проект и отмечается Core. Такая же ссылка на Core добавляется в Tests. В файлах .csproj появляется ProjectReference. Для MainViewModel.cs в тестовом проекте используется элемент Compile с атрибутом Link.
 
-![Рисунок 1 - Библиотека и три проекта решения в Visual Studio](images/calculator-solution.png)
+![Рисунок 1 - Библиотека классов в Visual Studio](images/calculator-solution.png)
 
 ## 3.2 Сборка и запуск приложения
 
