@@ -51,6 +51,7 @@ public class MainViewModel : INotifyPropertyChanged
         }
         catch (Exception exception) when (exception is FormatException or ArithmeticException)
         {
+            Result = "—";
             Error = exception.Message;
             evaluated = false;
         }
