@@ -44,7 +44,7 @@ dotnet run --project KuznetsovCalculator.Wpf -c Release
 ## Состав комплекта
 
 В корне находятся решение, проекты, `Directory.Build.props` и `.gitignore`.
-Папка `docs` содержит PDF и иллюстрации к нему.
+Папка `docs` содержит PDF и снимок калькулятора.
 Папки `bin`, `obj`, `.vs`, `TestResults` и пользовательские настройки Visual Studio не публикуются.
 
 Репозиторий: https://github.com/waw9991/Kuznetsov-Calculator-PR2
