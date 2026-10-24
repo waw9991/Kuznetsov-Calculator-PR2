@@ -34,7 +34,9 @@ public class MainViewModel : INotifyPropertyChanged
     {
         string next = Expression;
         if (evaluated)
-            next = token is "+" or "-" or "*" or "/" or "^" ? Result : "";
+            next = token is "+" or "-" or "*" or "/" or "^"
+                ? (Result.StartsWith('-') ? $"({Result})" : Result)
+                : "";
         if (next.Length + token.Length <= 256) Expression = next + token;
     }
 

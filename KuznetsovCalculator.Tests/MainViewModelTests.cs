@@ -42,6 +42,11 @@ public class MainViewModelTests
         var model = new MainViewModel { Expression = "3+4" };
         model.Evaluate(); model.Input("*"); model.Input("2"); model.Evaluate();
         Assert.AreEqual("14", model.Result);
+
+        model.Expression = "2-4";
+        model.Evaluate(); model.Input("^"); model.Input("2"); model.Evaluate();
+        Assert.AreEqual("4", model.Result,
+            "Continuation must preserve the negative result as a single operand.");
     }
     [TestMethod]
     public void Input_FractionalResult_ContinuesCalculation()
